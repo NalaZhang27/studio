@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aurora Sound Studio
+
+A premium bilingual (English / Simplified Chinese) website for a creative music studio providing original music and audio services for film, animation, theatre, games, and contemporary media.
+
+## Tech Stack
+
+- **Next.js 16** (App Router)
+- **TypeScript**
+- **Tailwind CSS 4**
+- **Framer Motion** (animations)
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/              # Next.js pages (Home, About, Portfolio, Services, Projects, Contact)
+├── components/       # UI, layout, page-specific components
+├── config/           # Branding & site configuration (easy to rebrand)
+├── content/          # All translatable content & data (easy to update)
+│   ├── i18n/         # English & Chinese translations
+│   ├── team.ts       # Team members
+│   ├── portfolio.ts  # Portfolio projects
+│   ├── services.ts   # Service offerings
+│   └── projects.ts   # Studio project pipeline
+├── context/          # Language context (instant switching + persistence)
+└── types/            # Shared TypeScript types
+```
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+### Rebrand the Studio
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Edit `src/config/branding.ts` to change:
+- Studio name
+- Tagline
+- Contact email & location
+- Social media links
+- Demo reel YouTube ID
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Update Content
 
-## Deploy on Vercel
+- **Translations**: `src/content/i18n/en.ts` and `zh.ts`
+- **Team**: `src/content/team.ts`
+- **Portfolio**: `src/content/portfolio.ts`
+- **Services**: `src/content/services.ts`
+- **Projects**: `src/content/projects.ts`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Future Expansion
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The architecture supports future evolution into:
+- Multi-composer collective (`collectiveConfig` in `team.ts`)
+- Collaboration marketplace (`collaborationOpportunities` in `projects.ts`)
+- Individual composer profiles (`profileSlug` on team members)
+
+## Build
+
+```bash
+npm run build
+npm start
+```
+
+## License
+
+Private — Aurora Sound Studio

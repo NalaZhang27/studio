@@ -1,26 +1,83 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --aurora-dark: #0a0a0f;
+  --aurora-darker: #060609;
+  --aurora-card: #12121a;
+  --aurora-gold: #c9a962;
+  --aurora-gold-light: #dfc07a;
+  --aurora-gold-dark: #a88b4a;
+  --aurora-purple: #6b4c9a;
+  --aurora-muted: #9ca3af;
+  --aurora-muted-dark: #6b7280;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-aurora-dark: var(--aurora-dark);
+  --color-aurora-darker: var(--aurora-darker);
+  --color-aurora-card: var(--aurora-card);
+  --color-aurora-gold: var(--aurora-gold);
+  --color-aurora-gold-light: var(--aurora-gold-light);
+  --color-aurora-gold-dark: var(--aurora-gold-dark);
+  --color-aurora-purple: var(--aurora-purple);
+  --color-aurora-muted: var(--aurora-muted);
+  --color-aurora-muted-dark: var(--aurora-muted-dark);
+  --font-display: var(--font-cormorant);
+  --font-body: var(--font-outfit);
+  --font-chinese: var(--font-noto-sans-sc);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--aurora-dark);
+  color: #ffffff;
+  font-family: var(--font-body), var(--font-chinese), system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), var(--font-chinese), serif;
+}
+
+::selection {
+  background: rgba(201, 169, 98, 0.3);
+  color: #ffffff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--aurora-gold);
+  outline-offset: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--aurora-darker);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(201, 169, 98, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(201, 169, 98, 0.5);
+}
+
+@keyframes aurora-pulse {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.animate-aurora-pulse {
+  animation: aurora-pulse 4s ease-in-out infinite;
 }
