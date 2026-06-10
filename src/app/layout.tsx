@@ -1,27 +1,31 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Outfit, Noto_Sans_SC } from "next/font/google";
+import {
+  Inconsolata,
+  Noto_Serif_SC,
+  Playfair_Display,
+} from "next/font/google";
 import { branding } from "@/config/branding";
 import { ClientProviders } from "@/components/providers/ClientProviders";
 import "./globals.css";
 
-const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
+const playfairDisplay = Playfair_Display({
+  variable: "--font-playfair-display",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
-const outfit = Outfit({
-  variable: "--font-outfit",
+const inconsolata = Inconsolata({
+  variable: "--font-inconsolata",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
 
-const notoSansSC = Noto_Sans_SC({
-  variable: "--font-noto-sans-sc",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+const notoSerifSC = Noto_Serif_SC({
+  variable: "--font-noto-serif-sc",
+  subsets: ["latin", "chinese-simplified"],
+  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -32,13 +36,14 @@ export const metadata: Metadata = {
   },
   description: branding.studio.description.en,
   keywords: [
+    "EON Resonance Lab",
     "film scoring",
     "music studio",
     "orchestration",
     "game music",
     "musical theatre",
-    "K-pop production",
     "animation scoring",
+    "contemporary production",
   ],
   authors: [{ name: branding.studio.name }],
   openGraph: {
@@ -63,7 +68,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${cormorant.variable} ${outfit.variable} ${notoSansSC.variable} h-full`}
+      className={`${playfairDisplay.variable} ${inconsolata.variable} ${notoSerifSC.variable} h-full`}
     >
       <body className="min-h-full flex flex-col antialiased">
         <a

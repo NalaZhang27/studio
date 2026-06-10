@@ -1,7 +1,6 @@
 export type Locale = "en" | "zh";
 
 export type LocalizedString = Record<Locale, string>;
-
 export type LocalizedStringArray = Record<Locale, string[]>;
 
 export type PortfolioCategory =
@@ -12,7 +11,40 @@ export type PortfolioCategory =
   | "songs"
   | "arrangements";
 
-export type ProjectStatus = "completed" | "ongoing" | "upcoming";
+export type ProjectStatus = "released" | "in-progress" | "upcoming";
+
+export type MediaPlatform =
+  | "youtube"
+  | "bilibili"
+  | "soundcloud"
+  | "netease";
+
+export interface ProjectMedia {
+  platform: MediaPlatform;
+  url: string;
+  title?: LocalizedString;
+}
+
+export interface ProjectContributor {
+  name: string;
+  role: LocalizedString;
+}
+
+export interface PortfolioProject {
+  id: string;
+  slug: string;
+  category: PortfolioCategory;
+  status: ProjectStatus;
+  title: LocalizedString;
+  subtitle: LocalizedString;
+  description: LocalizedString;
+  composer: ProjectContributor;
+  collaborators: ProjectContributor[];
+  year: string;
+  coverImage: string;
+  featured?: boolean;
+  media?: ProjectMedia[];
+}
 
 export interface TeamMember {
   id: string;
@@ -20,26 +52,7 @@ export interface TeamMember {
   roles: LocalizedStringArray;
   bio: LocalizedString;
   image: string;
-  /** Future: link to individual composer profile in collective */
   profileSlug?: string;
-}
-
-export interface PortfolioProject {
-  id: string;
-  slug: string;
-  category: PortfolioCategory;
-  title: LocalizedString;
-  description: LocalizedString;
-  credits: LocalizedString;
-  coverImage: string;
-  year: string;
-  featured?: boolean;
-  media?: {
-    type: "youtube" | "audio";
-    url: string;
-    title?: LocalizedString;
-  };
-  gallery?: string[];
 }
 
 export interface Service {
@@ -48,26 +61,4 @@ export interface Service {
   title: LocalizedString;
   description: LocalizedString;
   deliverables: LocalizedStringArray;
-}
-
-export interface StudioProject {
-  id: string;
-  status: ProjectStatus;
-  title: LocalizedString;
-  client: LocalizedString;
-  description: LocalizedString;
-  timeline: LocalizedString;
-  coverImage: string;
-}
-
-/** Future marketplace / collective expansion hooks */
-export interface FutureComposerSlot {
-  id: string;
-  available: boolean;
-  specialties: string[];
-}
-
-export interface CollectiveConfig {
-  enabled: boolean;
-  composerSlots: FutureComposerSlot[];
 }

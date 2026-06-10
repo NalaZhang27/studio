@@ -1,23 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import {
-  InstagramIcon,
-  LinkedinIcon,
-  YoutubeIcon,
-  Music2,
-} from "@/components/ui/SocialIcons";
 import { branding } from "@/config/branding";
 import { siteConfig } from "@/config/site";
 import { useTranslation } from "@/context/LanguageContext";
 import { Container } from "@/components/ui/Container";
-
-const socialIcons = [
-  { key: "youtube" as const, icon: YoutubeIcon, label: "YouTube" },
-  { key: "instagram" as const, icon: InstagramIcon, label: "Instagram" },
-  { key: "spotify" as const, icon: Music2, label: "Spotify" },
-  { key: "linkedin" as const, icon: LinkedinIcon, label: "LinkedIn" },
-];
 
 export function Footer() {
   const { t, locale } = useTranslation();
@@ -41,20 +28,6 @@ export function Footer() {
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-aurora-muted">
               {t.footer.tagline}
             </p>
-            <div className="mt-6 flex gap-3">
-              {socialIcons.map(({ key, icon: Icon, label }) => (
-                <a
-                  key={key}
-                  href={branding.social[key]}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={label}
-                  className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-aurora-muted transition-all hover:border-aurora-gold/50 hover:text-aurora-gold"
-                >
-                  <Icon size={18} />
-                </a>
-              ))}
-            </div>
           </div>
 
           <div>

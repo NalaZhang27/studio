@@ -1,32 +1,37 @@
 /**
- * Central branding configuration.
- * Update studio name, contact info, and social links here.
+ * Central branding configuration for EON Resonance Lab.
+ * Keep all studio naming, positioning, and contact details here.
  */
 export const branding = {
   studio: {
-    name: "Aurora Sound Studio",
-    nameShort: "Aurora",
+    name: "EON Resonance Lab",
+    nameShort: "EON",
     tagline: {
-      en: "Music for Stories That Matter",
-      zh: "为值得讲述的故事创作音乐",
+      en: "Cinematic music for film, stage, screens, and collaborative worlds.",
+      zh: "为电影、舞台、影像与合作型创作世界打造电影感音乐。",
     },
     description: {
-      en: "A boutique creative studio crafting original music and audio for film, animation, theatre, games, and contemporary media.",
-      zh: "一家精品创意音乐工作室，为电影、动画、戏剧、游戏与当代媒体项目创作原创音乐与音频。",
+      en: "EON Resonance Lab is a boutique creative music studio specializing in film scoring, animation music, musical theatre, contemporary production, arrangement, and cross-cultural music projects.",
+      zh: "EON Resonance Lab 是一家精品创意音乐工作室，专注于电影配乐、动画音乐、音乐剧、当代制作、编曲与跨文化音乐项目。",
+    },
+    positioning: {
+      en: [
+        "Cinematic",
+        "Elegant",
+        "Modern",
+        "Creative",
+        "International",
+        "Artist-driven",
+      ],
+      zh: ["电影感", "优雅", "现代", "创意", "国际化", "艺术家驱动"],
     },
   },
   contact: {
-    email: "hello@aurorasound.studio",
+    email: "hello@eonresonance.lab",
     location: {
-      en: "Shanghai · Remote Worldwide",
-      zh: "上海 · 全球远程合作",
+      en: "New York · Remote Worldwide",
+      zh: "纽约 · 全球远程合作",
     },
-  },
-  social: {
-    youtube: "https://youtube.com",
-    instagram: "https://instagram.com",
-    spotify: "https://spotify.com",
-    linkedin: "https://linkedin.com",
   },
   demoReel: {
     youtubeId: "dQw4w9WgXcQ",
