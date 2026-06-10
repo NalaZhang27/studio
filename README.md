@@ -1,6 +1,8 @@
-# Aurora Sound Studio
+# EON Resonance Lab
 
-A premium bilingual (English / Simplified Chinese) website for a creative music studio providing original music and audio services for film, animation, theatre, games, and contemporary media.
+A premium bilingual (English / Simplified Chinese) website for a creative music studio dedicated to storytelling through sound.
+
+**Website:** https://eonresonance.lab
 
 ## Tech Stack
 
@@ -70,4 +72,4 @@ npm start
 
 ## License
 
-Private — Aurora Sound Studio
+Private — EON Resonance Lab
