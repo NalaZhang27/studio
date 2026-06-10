@@ -7,12 +7,12 @@ export const branding = {
     name: "EON Resonance Lab",
     nameShort: "EON",
     tagline: {
-      en: "Cinematic music for film, stage, screens, and collaborative worlds.",
-      zh: "为电影、舞台、影像与合作型创作世界打造电影感音乐。",
+      en: "Music for Stories That Matter",
+      zh: "为触动人心的故事谱写音乐",
     },
     description: {
-      en: "EON Resonance Lab is a boutique creative music studio specializing in film scoring, animation music, musical theatre, contemporary production, arrangement, and cross-cultural music projects.",
-      zh: "EON Resonance Lab 是一家精品创意音乐工作室，专注于电影配乐、动画音乐、音乐剧、当代制作、编曲与跨文化音乐项目。",
+      en: "EON Resonance Lab is a creative music studio dedicated to storytelling through sound.\n\nWe create original music for film, animation, games, and contemporary media, combining cinematic composition, orchestral writing, and modern production.\n\nThrough original scoring, arrangement, and collaborative projects, we craft music that brings stories to life and leaves a lasting emotional impact.",
+      zh: "EON Resonance Lab 是一家专注于叙事与声音表达的创意音乐工作室。\n\n我们为电影、动画、游戏及当代媒体项目创作原创音乐，融合影视配乐、管弦写作与现代制作理念，以音乐塑造情感、传递故事。\n\n从原创配乐到编曲制作，从个人创作到跨领域合作，我们致力于打造兼具艺术性与感染力的声音体验。",
     },
     positioning: {
       en: [

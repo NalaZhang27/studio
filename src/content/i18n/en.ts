@@ -35,7 +35,7 @@ export const en = {
     intro: {
       label: "The Studio",
       title: "Where Cinematic Storytelling Meets Contemporary Production",
-      body: "Aurora Sound Studio is a boutique creative music studio serving professional clients across film, animation, musical theatre, games, and contemporary media. We combine orchestral composition, narrative-driven scoring, and modern production to create music that elevates every story.",
+      body: "EON Resonance Lab is a creative music studio dedicated to storytelling through sound.\n\nWe create original music for film, animation, games, and contemporary media, combining cinematic composition, orchestral writing, and modern production.\n\nThrough original scoring, arrangement, and collaborative projects, we craft music that brings stories to life and leaves a lasting emotional impact.",
     },
     featured: {
       label: "Featured Work",
@@ -196,10 +196,10 @@ export const en = {
         "Other",
       ],
       budgetRanges: [
-        "Under $5,000",
-        "$5,000 – $15,000",
-        "$15,000 – $50,000",
-        "$50,000+",
+        "Under $5,000 USD",
+        "$5,000 – $15,000 USD",
+        "$15,000 – $50,000 USD",
+        "$50,000+ USD",
         "To be discussed",
       ],
     },

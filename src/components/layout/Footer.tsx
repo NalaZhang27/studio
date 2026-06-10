@@ -5,6 +5,7 @@ import { branding } from "@/config/branding";
 import { siteConfig } from "@/config/site";
 import { useTranslation } from "@/context/LanguageContext";
 import { Container } from "@/components/ui/Container";
+import { StudioLogo } from "@/components/branding/StudioLogo";
 
 export function Footer() {
   const { t, locale } = useTranslation();
@@ -15,15 +16,12 @@ export function Footer() {
       <Container className="py-16 lg:py-20">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-2">
-            <Link href="/" className="inline-flex items-center gap-2">
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-aurora-gold to-aurora-gold-dark">
-                <span className="font-display text-sm font-semibold text-aurora-dark">
-                  A
-                </span>
-              </span>
-              <span className="font-display text-lg font-light text-white">
-                {branding.studio.name}
-              </span>
+            <Link
+              href="/"
+              className="inline-flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-aurora-gold rounded-sm"
+              aria-label={branding.studio.name}
+            >
+              <StudioLogo variant="horizontal" />
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-aurora-muted">
               {t.footer.tagline}

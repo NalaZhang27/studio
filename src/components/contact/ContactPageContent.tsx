@@ -20,7 +20,7 @@ const socialLinks = [
   { key: "instagram" as const, icon: InstagramIcon, label: "Instagram" },
   { key: "spotify" as const, icon: Music2, label: "Spotify" },
   { key: "linkedin" as const, icon: LinkedinIcon, label: "LinkedIn" },
-];
+].filter(({ key }) => Boolean((branding as { social?: Record<string, string> }).social?.[key]));
 
 export function ContactPageContent() {
   const { t, locale } = useTranslation();

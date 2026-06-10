@@ -6,6 +6,7 @@ import { branding } from "@/config/branding";
 import { useTranslation } from "@/context/LanguageContext";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import { HomeOrbAnimation } from "@/components/home/HomeOrbAnimation";
 
 export function Hero() {
   const { t, locale } = useTranslation();
@@ -18,30 +19,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-aurora-dark/60 via-aurora-dark/80 to-aurora-dark" />
       </div>
 
-      <div className="absolute inset-0 overflow-hidden">
-        {[...Array(3)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute rounded-full bg-aurora-gold/5 blur-3xl"
-            style={{
-              width: 300 + i * 100,
-              height: 300 + i * 100,
-              top: `${20 + i * 15}%`,
-              left: `${10 + i * 25}%`,
-            }}
-            animate={{
-              x: [0, 30, 0],
-              y: [0, -20, 0],
-              opacity: [0.3, 0.6, 0.3],
-            }}
-            transition={{
-              duration: 8 + i * 2,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-          />
-        ))}
-      </div>
+      <HomeOrbAnimation />
 
       <Container className="relative z-10 pt-32 pb-20">
         <div className="max-w-4xl">

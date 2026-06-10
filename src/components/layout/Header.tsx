@@ -9,6 +9,7 @@ import { siteConfig } from "@/config/site";
 import { useTranslation } from "@/context/LanguageContext";
 import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
 import { Container } from "@/components/ui/Container";
+import { StudioLogo } from "@/components/branding/StudioLogo";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -47,17 +48,10 @@ export function Header() {
         >
           <Link
             href="/"
-            className="group flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-aurora-gold rounded-sm"
+            className="group flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-aurora-gold rounded-sm"
+            aria-label={branding.studio.name}
           >
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-aurora-gold to-aurora-gold-dark">
-              <span className="font-display text-sm font-semibold text-aurora-dark">
-                A
-              </span>
-            </span>
-            <span className="font-display text-lg font-light tracking-wide text-white transition-colors group-hover:text-aurora-gold">
-              {branding.studio.nameShort}
-              <span className="hidden sm:inline"> Sound Studio</span>
-            </span>
+            <StudioLogo variant="horizontal" />
           </Link>
 
           <div className="hidden items-center gap-8 lg:flex">
