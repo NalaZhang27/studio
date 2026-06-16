@@ -24,7 +24,7 @@ const inconsolata = Inconsolata({
 
 const notoSerifSC = Noto_Serif_SC({
   variable: "--font-noto-serif-sc",
-  subsets: ["latin", "chinese-simplified"],
+  subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
