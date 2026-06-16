@@ -1,17 +1,12 @@
 "use client";
 
-import {
-  Mail,
-  MapPin,
-} from "@/components/ui/SocialIcons";
+import { Mail, MapPin } from "@/components/ui/SocialIcons";
 import { branding } from "@/config/branding";
 import { useTranslation } from "@/context/LanguageContext";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { ContactForm } from "@/components/contact/ContactForm";
-
-
 
 export function ContactPageContent() {
   const { t, locale } = useTranslation();
@@ -71,7 +66,7 @@ export function ContactPageContent() {
                     </div>
                   </div>
                 </div>
-                
+
                 <p className="mt-8 text-sm text-aurora-muted">
                   {t.contact.info.response}
                 </p>

@@ -33,6 +33,12 @@ export const branding = {
       zh: "纽约 · 全球远程合作",
     },
   },
+  social: {
+    youtube: "https://www.youtube.com/@eonresonancelab",
+    instagram: "https://www.instagram.com/eonresonancelab",
+    spotify: "https://open.spotify.com/artist/eonresonancelab",
+    linkedin: "https://www.linkedin.com/company/eonresonancelab",
+  },
   demoReel: {
     youtubeId: "dQw4w9WgXcQ",
   },
