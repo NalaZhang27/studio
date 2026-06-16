@@ -1,10 +1,6 @@
 "use client";
 
 import {
-  InstagramIcon,
-  LinkedinIcon,
-  YoutubeIcon,
-  Music2,
   Mail,
   MapPin,
 } from "@/components/ui/SocialIcons";
@@ -15,12 +11,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { ContactForm } from "@/components/contact/ContactForm";
 
-const socialLinks = [
-  { key: "youtube" as const, icon: YoutubeIcon, label: "YouTube" },
-  { key: "instagram" as const, icon: InstagramIcon, label: "Instagram" },
-  { key: "spotify" as const, icon: Music2, label: "Spotify" },
-  { key: "linkedin" as const, icon: LinkedinIcon, label: "LinkedIn" },
-].filter(({ key }) => Boolean((branding as { social?: Record<string, string> }).social?.[key]));
+
 
 export function ContactPageContent() {
   const { t, locale } = useTranslation();
@@ -80,27 +71,7 @@ export function ContactPageContent() {
                     </div>
                   </div>
                 </div>
-
-                <div className="mt-8 border-t border-white/5 pt-8">
-                  <p className="text-xs font-medium uppercase tracking-wider text-aurora-muted">
-                    {t.contact.info.socialLabel}
-                  </p>
-                  <div className="mt-4 flex gap-3">
-                    {socialLinks.map(({ key, icon: Icon, label }) => (
-                      <a
-                        key={key}
-                        href={branding.social[key]}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={label}
-                        className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-aurora-muted transition-all hover:border-aurora-gold/50 hover:text-aurora-gold"
-                      >
-                        <Icon size={18} />
-                      </a>
-                    ))}
-                  </div>
-                </div>
-
+                
                 <p className="mt-8 text-sm text-aurora-muted">
                   {t.contact.info.response}
                 </p>
