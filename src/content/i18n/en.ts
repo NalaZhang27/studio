@@ -1,10 +1,8 @@
 export const en = {
   nav: {
     home: "Home",
-    about: "About",
     portfolio: "Portfolio",
     services: "Services",
-    projects: "Projects",
     contact: "Contact",
   },
   common: {
@@ -33,7 +31,7 @@ export const en = {
       ctaSecondary: "Watch Demo Reel",
     },
     intro: {
-      label: "The Studio",
+      label: "Studio",
       title: "Where Cinematic Storytelling Meets Contemporary Production",
       body: "EON Resonance Lab is a creative music studio dedicated to storytelling through sound.\n\nWe create original music for film, animation, games, and contemporary media, combining cinematic composition, orchestral writing, and modern production.\n\nThrough original scoring, arrangement, and collaborative projects, we craft music that brings stories to life and leaves a lasting emotional impact.",
     },
@@ -42,7 +40,7 @@ export const en = {
       title: "Selected Projects",
     },
     team: {
-      label: "Our Team",
+      label: "Studio",
       title: "Composers & Producers",
       subtitle:
         "Two distinct creative voices united by a shared commitment to storytelling through sound.",
@@ -59,40 +57,11 @@ export const en = {
     },
   },
   about: {
-    hero: {
-      label: "About Us",
+    studio: {
+      label: "Studio",
+      labelZh: "工作室简介",
       title: "Crafting Sound for the Stories of Tomorrow",
-    },
-    mission: {
-      label: "Our Mission",
-      title: "Music That Moves Audiences",
-      body: "We believe every story deserves a sonic identity as compelling as its narrative. Aurora Sound Studio exists at the intersection of cinematic composition, theatrical storytelling, and contemporary production — delivering original music that resonates across cultures and mediums.",
-      values: [
-        {
-          title: "Narrative First",
-          body: "Every note serves the story. We compose with intention, ensuring music amplifies emotion rather than overshadowing it.",
-        },
-        {
-          title: "Cross-Medium Expertise",
-          body: "From symphony halls to streaming platforms, our team brings depth across orchestral, theatrical, and pop production.",
-        },
-        {
-          title: "Collaborative Spirit",
-          body: "We work closely with directors, producers, and creative teams — adapting our process to fit each project's unique vision.",
-        },
-      ],
-    },
-    philosophy: {
-      label: "Creative Philosophy",
-      title: "The Aurora Approach",
-      body: "Our studio merges two complementary creative perspectives: Enshun's cinematic and theatrical composition expertise with Enyuan's contemporary arrangement and production mastery. Together, we offer clients a unified studio experience that spans from orchestral underscore to chart-ready production.",
-      pillars: [
-        "Cinematic composition & orchestration",
-        "Story-driven musical theatre writing",
-        "Modern pop & K-pop production",
-        "Cross-cultural musical research",
-        "Full-service audio delivery",
-      ],
+      body: "We believe every story deserves a sonic identity as compelling as its narrative. EON Resonance Lab exists at the intersection of cinematic composition, theatrical storytelling, and contemporary production — delivering original music that resonates across cultures and mediums.",
     },
     team: {
       label: "The Team",
@@ -109,7 +78,6 @@ export const en = {
     categories: {
       film: "Film",
       animation: "Animation",
-      theatre: "Musical Theatre",
       games: "Games",
       songs: "Songs",
       arrangements: "Arrangements",
@@ -129,19 +97,19 @@ export const en = {
       steps: [
         {
           title: "Discovery",
-          body: "We begin with your vision — understanding narrative, tone, references, and creative goals.",
+          body: "Discuss project goals, creative direction, references, timeline, and artistic vision with the client.",
         },
         {
           title: "Composition",
-          body: "Original themes, motifs, and arrangements are crafted to serve your story's emotional arc.",
+          body: "Create original music, themes, arrangements, and initial drafts based on project requirements.",
         },
         {
-          title: "Production",
-          body: "Recording, orchestration, arrangement, and vocal production bring the score to life.",
+          title: "Revision",
+          body: "Work closely with the client through feedback rounds and revisions to refine the music until it matches the creative vision.",
         },
         {
           title: "Delivery",
-          body: "Final mixes, stems, and deliverables formatted for your platform and workflow.",
+          body: "Deliver the final approved audio files and project assets in the required formats.",
         },
       ],
     },
@@ -219,34 +187,19 @@ export const en = {
   },
   seo: {
     home: {
-      title: "Aurora Sound Studio — Music for Stories That Matter",
+      title: "EON Resonance Lab — Music for Stories That Matter",
       description:
         "Premium music studio offering film scoring, animation music, game audio, musical theatre composition, and contemporary production.",
     },
-    about: {
-      title: "About — Aurora Sound Studio",
-      description:
-        "Meet the composers and producers behind Aurora Sound Studio. Cinematic composition meets contemporary production.",
-    },
     portfolio: {
-      title: "Portfolio — Aurora Sound Studio",
+      title: "Portfolio — EON Resonance Lab",
       description:
         "Explore our portfolio of film scores, animation music, game soundtracks, theatre compositions, and pop productions.",
     },
-    services: {
-      title: "Services — Aurora Sound Studio",
-      description:
-        "Film scoring, orchestration, game music, musical theatre, song arrangement, and vocal production services.",
-    },
-    projects: {
-      title: "Projects — Aurora Sound Studio",
-      description:
-        "View completed projects, ongoing productions, and upcoming collaborations at Aurora Sound Studio.",
-    },
     contact: {
-      title: "Contact — Aurora Sound Studio",
+      title: "Contact — EON Resonance Lab",
       description:
-        "Get in touch with Aurora Sound Studio for your next film, animation, game, or music project.",
+        "Get in touch with EON Resonance Lab for your next film, animation, game, or music project.",
     },
   },
 };

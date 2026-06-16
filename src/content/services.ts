@@ -117,57 +117,16 @@ export const services: Service[] = [
     title: { en: "Orchestration", zh: "管弦乐编配" },
     description: {
       en: "Professional orchestration services transforming piano sketches or MIDI demos into fully realized orchestral scores for recording and performance.",
-      zh: "专业管弦乐编配服务，将钢琴草稿或MIDI样带转化为可用于录音与演出的完整管弦乐总谱。",
+      zh: "专业管弦乐编配服务，将钢琴草稿或MIDI样带转化为完整的管弦乐总谱，用于演出和后期制作。",
     },
     deliverables: {
       en: [
         "Full orchestral score",
         "Part extraction",
-        "Recording sessions",
         "Conductor materials",
+        "Performance-ready files",
       ],
-      zh: ["完整管弦乐总谱", "分谱提取", "录音会话", "指挥材料"],
-    },
-  },
-  {
-    id: "music-production",
-    icon: "sliders",
-    title: { en: "Music Production", zh: "音乐制作" },
-    description: {
-      en: "End-to-end music production from concept to final master. Recording, editing, mixing, and mastering for albums, singles, and media projects.",
-      zh: "从概念到最终母带的端到端音乐制作。为专辑、单曲与媒体项目提供录音、编辑、混音与母带处理。",
-    },
-    deliverables: {
-      en: [
-        "Full production",
-        "Session musicians",
-        "Mix & master",
-        "Distribution-ready files",
-      ],
-      zh: ["完整制作", "会话乐手", "混音与母带", "发行就绪文件"],
-    },
-  },
-  {
-    id: "vocal-production",
-    icon: "mic",
-    title: { en: "Vocal Production", zh: "人声制作" },
-    description: {
-      en: "Expert vocal production including tuning, stacking, harmony arrangement, and performance direction for studio and release-quality vocals.",
-      zh: "专业人声制作，包括修音、叠加、和声编排与表演指导，呈现录音室与发行级人声品质。",
-    },
-    deliverables: {
-      en: [
-        "Vocal tuning & editing",
-        "Harmony arrangement",
-        "Stack & double tracking",
-        "Performance coaching",
-      ],
-      zh: [
-        "人声修音与编辑",
-        "和声编排",
-        "叠加与双轨",
-        "表演指导",
-      ],
+      zh: ["完整管弦乐总谱", "分谱提取", "指挥材料", "演出就绪文件"],
     },
   },
 ];

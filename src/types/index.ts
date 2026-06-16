@@ -17,7 +17,8 @@ export type MediaPlatform =
   | "youtube"
   | "bilibili"
   | "soundcloud"
-  | "netease";
+  | "netease"
+  | "audio";
 
 export interface ProjectMedia {
   platform: MediaPlatform;
@@ -28,6 +29,12 @@ export interface ProjectMedia {
 export interface ProjectContributor {
   name: string;
   role: LocalizedString;
+}
+
+export interface PortfolioTrack {
+  title: LocalizedString;
+  media: ProjectMedia;
+  coverImage?: string;
 }
 
 export interface PortfolioProject {
@@ -43,7 +50,8 @@ export interface PortfolioProject {
   year: string;
   coverImage: string;
   featured?: boolean;
-  media?: ProjectMedia[];
+  media?: ProjectMedia;
+  tracks?: PortfolioTrack[];
 }
 
 export interface TeamMember {

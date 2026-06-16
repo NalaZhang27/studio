@@ -43,6 +43,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+iframe {
+  opacity: 1;
+  filter: none;
+  mix-blend-mode: normal;
+}
+
 html[lang^="zh"] body {
   font-family: var(--font-body-zh), var(--font-body-en), serif;
 }

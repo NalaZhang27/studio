@@ -106,7 +106,7 @@ export function ContactForm() {
             id="projectType"
             value={form.projectType}
             onChange={(e) => update("projectType", e.target.value)}
-            className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white transition-colors focus:border-aurora-gold/50 focus:outline-none focus:ring-1 focus:ring-aurora-gold/50"
+            className="w-full rounded-xl border border-white/10 bg-transparent px-4 py-3 text-white transition-colors focus:border-aurora-gold/50 focus:outline-none focus:ring-1 focus:ring-aurora-gold/50"
           >
             <option value="" className="bg-aurora-dark">
               —
@@ -126,7 +126,7 @@ export function ContactForm() {
             id="budget"
             value={form.budget}
             onChange={(e) => update("budget", e.target.value)}
-            className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white transition-colors focus:border-aurora-gold/50 focus:outline-none focus:ring-1 focus:ring-aurora-gold/50"
+            className="w-full rounded-xl border border-white/10 bg-transparent px-4 py-3 text-white transition-colors focus:border-aurora-gold/50 focus:outline-none focus:ring-1 focus:ring-aurora-gold/50"
           >
             <option value="" className="bg-aurora-dark">
               —

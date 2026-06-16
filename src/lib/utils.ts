@@ -4,6 +4,10 @@ export function cn(...classes: (string | boolean | undefined | null)[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-export function t(content: LocalizedString, locale: Locale): string {
-  return content[locale];
+export function t(
+  content: LocalizedString | undefined | null,
+  locale: Locale,
+  fallback = ""
+): string {
+  return content?.[locale] ?? fallback;
 }
