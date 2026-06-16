@@ -45,6 +45,7 @@ export interface PortfolioProject {
   title: LocalizedString;
   subtitle: LocalizedString;
   description: LocalizedString;
+  credits: LocalizedString;
   composer: ProjectContributor;
   collaborators: ProjectContributor[];
   year: string;
