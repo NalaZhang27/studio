@@ -78,6 +78,7 @@ export const en = {
     categories: {
       film: "Film",
       animation: "Animation",
+      theatre: "Theatre",
       games: "Games",
       songs: "Songs",
       arrangements: "Arrangements",

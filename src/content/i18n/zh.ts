@@ -76,6 +76,7 @@ export const zh = {
     categories: {
       film: "电影",
       animation: "动画",
+      theatre: "戏剧",
       games: "游戏",
       songs: "歌曲",
       arrangements: "编曲",
