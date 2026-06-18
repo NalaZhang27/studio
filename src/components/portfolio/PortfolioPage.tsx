@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useMemo, useState } from "react";
 import { ArrowRight, PlayCircle } from "lucide-react";
 import { portfolioProjects, portfolioCategories } from "@/content/portfolio";
-import type { PortfolioCategory, PortfolioProject, MediaPlatform } from "@/types";
+import type { PortfolioCategory, PortfolioProject, MediaPlatform, PortfolioTrack } from "@/types";
 import { useTranslation } from "@/context/LanguageContext";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -52,7 +52,7 @@ function TrackCover({
   track,
   locale,
 }: {
-  track: { title: PortfolioProject["title"]; coverImage?: string };
+  track: Pick<PortfolioTrack, "title" | "coverImage">;
   locale: ReturnType<typeof useTranslation>["locale"];
 }) {
   const coverImage =
@@ -79,7 +79,7 @@ function TrackCover({
 }
 
 function AudioCard({ project, locale }: { project: PortfolioProject; locale: ReturnType<typeof useTranslation>["locale"] }) {
-  const track = project.tracks?.[0] ?? { title: project.title };
+  const track: Pick<PortfolioTrack, "title" | "coverImage"> = project.tracks?.[0] ?? { title: project.title };
 
   return (
     <Link
