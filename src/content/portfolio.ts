@@ -135,6 +135,7 @@ export const portfolioProjects: PortfolioProject[] = [
     featured: true,
     media: {
       type: "youtube",
+      platform: "youtube",
       url: "https://www.youtube.com/embed/UDNVt9itMi8?si=Bl17w7_49xAJGtoQ",
       title: { en: "Trail of Light — Main Theme", zh: "光之轨迹 — 主题曲" },
     },
