@@ -20,7 +20,7 @@ export type MediaPlatform =
   | "audio";
 
 export interface ProjectMedia {
-  type?: "audio" | "video";
+  type?: "audio" | "video" | "youtube";
   platform: MediaPlatform;
   url: string;
   title?: LocalizedString;
