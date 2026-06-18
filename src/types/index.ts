@@ -6,7 +6,6 @@ export type LocalizedStringArray = Record<Locale, string[]>;
 export type PortfolioCategory =
   | "film"
   | "animation"
-  | "theatre"
   | "games"
   | "songs"
   | "arrangements";

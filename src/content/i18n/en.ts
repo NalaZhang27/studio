@@ -73,7 +73,7 @@ export const en = {
       label: "Portfolio",
       title: "Our Creative Work",
       subtitle:
-        "A curated selection of scores, arrangements, and productions across film, animation, theatre, games, and contemporary music.",
+        "A curated selection of scores, arrangements, and productions across film, animation, games, and contemporary music.",
     },
     categories: {
       film: "Film",
