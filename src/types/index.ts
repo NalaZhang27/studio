@@ -60,7 +60,7 @@ export interface TeamMember {
   name: string;
   roles: LocalizedStringArray;
   bio: LocalizedString;
-  image: string;
+  image?: string;
   profileSlug?: string;
 }
 

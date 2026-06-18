@@ -202,6 +202,7 @@ export const portfolioProjects: PortfolioProject[] = [
     year: "2024",
     media: {
       type: "youtube",
+      platform: "youtube",
       url: "https://www.youtube.com/embed/_hLbeUQbhbc?si=-YWt-AK7KXEWw0yZ",
       title: { en: "去哪儿", zh: "去哪儿" },
     },
@@ -220,6 +221,7 @@ export const portfolioProjects: PortfolioProject[] = [
     year: "2024",
     media: {
       type: "youtube",
+      platform: "youtube",
       url: "https://www.youtube.com/embed/ZJsKNCAenvE?si=vS8jXxauQLcNBSsQ",
       title: { en: "HER", zh: "女也" },
     },
@@ -238,6 +240,7 @@ export const portfolioProjects: PortfolioProject[] = [
     year: "2025",
     media: {
       type: "youtube",
+      platform: "youtube",
       url: "https://www.youtube.com/embed/6eeODlpzS8g?si=OSMwP15wD8k9GoCJ",
       title: { en: "Let's Eat", zh: "Let's Eat" },
     },
@@ -256,6 +259,7 @@ export const portfolioProjects: PortfolioProject[] = [
     year: "2025",
     media: {
       type: "youtube",
+      platform: "youtube",
       url: "https://www.youtube.com/embed/H-rwop3FEC8?si=Zi_FBe707l-zRlW2",
       title: { en: "Bagelism", zh: "贝果主义" },
     },
@@ -274,6 +278,7 @@ export const portfolioProjects: PortfolioProject[] = [
     year: "2023",
     media: {
       type: "youtube",
+      platform: "youtube",
       url: "https://www.youtube.com/embed/dpZFXt2l3oc?si=uS0RfyTm9_CWmS69",
       title: { en: "Special Target", zh: "Special Target" },
     },
