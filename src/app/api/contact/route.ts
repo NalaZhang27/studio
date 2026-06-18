@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
 const CONTACT_EMAIL = "eonresonancelab@gmail.com";
 const RESEND_SEND_URL = "https://api.resend.com/emails";
+const RESEND_FROM_EMAIL = "EON Resonance Lab <no-reply@eonresonance.lab>";
 
 interface ContactRequestBody {
   name: string;
@@ -66,7 +67,7 @@ export async function POST(request: Request) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      from: "EON Resonance Lab <eonresonancelab@gmail.com>",
+      from: RESEND_FROM_EMAIL,
       to: [CONTACT_EMAIL],
       subject: "New Inquiry from EON Resonance Lab",
       text: emailBody,
