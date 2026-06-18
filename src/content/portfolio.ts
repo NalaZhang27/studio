@@ -183,6 +183,7 @@ export const portfolioProjects: PortfolioProject[] = [
     featured: true,
     media: {
       type: "youtube",
+      platform: "youtube",
       url: "https://www.youtube.com/embed/QaTGy9Dhrjk?si=PbyNEO0HP1uDJT5_",
       title: { en: "Trapped in Dreams", zh: "笼中之梦" },
     },
