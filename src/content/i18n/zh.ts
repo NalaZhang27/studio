@@ -2,6 +2,7 @@ export const zh = {
   nav: {
     home: "首页",
     portfolio: "作品集",
+    services: "服务",
     contact: "联系",
   },
   common: {
