@@ -41,18 +41,18 @@ export interface PortfolioProject {
   id: string;
   slug: string;
   category: PortfolioCategory;
-  status: ProjectStatus;
   title: LocalizedString;
-  subtitle: LocalizedString;
-  description: LocalizedString;
   credits: LocalizedString;
-  composer: ProjectContributor;
-  collaborators: ProjectContributor[];
   year: string;
   coverImage: string;
   featured?: boolean;
   media?: ProjectMedia;
   tracks?: PortfolioTrack[];
+  description?: LocalizedString;
+  subtitle?: LocalizedString;
+  status?: ProjectStatus;
+  composer?: ProjectContributor;
+  collaborators?: ProjectContributor[];
 }
 
 export interface TeamMember {
