@@ -159,6 +159,7 @@ export const portfolioProjects: PortfolioProject[] = [
     featured: true,
     media: {
       type: "youtube",
+      platform: "youtube",
       url: "https://www.youtube.com/embed/RBAR4hKKBsI?si=zsSWh2DBjTnXo2b_",
       title: { en: "Exclude AIDS, Not Seropositives — Main Theme", zh: "排除艾滋病，不排斥血清阳性者 — 主题曲" },
     },
