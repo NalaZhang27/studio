@@ -27,7 +27,7 @@ export const branding = {
     },
   },
   contact: {
-    email: "eonresonance@gmail.com",
+    email: "eonresonancelab@gmail.com",
     location: {
       en: "New York · Remote Worldwide",
       zh: "纽约 · 全球远程合作",

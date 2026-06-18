@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
-const CONTACT_EMAIL = "eonresonance@gmail.com";
+const CONTACT_EMAIL = "eonresonancelab@gmail.com";
 const RESEND_SEND_URL = "https://api.resend.com/emails";
 
 interface ContactRequestBody {
