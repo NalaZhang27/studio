@@ -14,6 +14,15 @@ interface FormData {
   message: string;
 }
 
+interface ContactApiSuccess {
+  success: true;
+}
+
+interface ContactApiError {
+  success: false;
+  error: string;
+}
+
 export function ContactForm() {
   const { t } = useTranslation();
   const [form, setForm] = useState<FormData>({
@@ -25,12 +34,14 @@ export function ContactForm() {
   });
   const [status, setStatus] = useState<"idle" | "sending" | "sent">("idle");
   const [errors, setErrors] = useState<Partial<FormData>>({});
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const validate = (): boolean => {
     const newErrors: Partial<FormData> = {};
     if (!form.name.trim()) newErrors.name = "Required";
     if (!form.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email))
       newErrors.email = "Invalid email";
+    if (!form.projectType.trim()) newErrors.projectType = "Required";
     if (!form.message.trim()) newErrors.message = "Required";
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -38,15 +49,36 @@ export function ContactForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setSubmitError(null);
     if (!validate()) return;
     setStatus("sending");
-    await new Promise((r) => setTimeout(r, 1200));
-    setStatus("sent");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+
+      const data = (await response.json()) as ContactApiSuccess | ContactApiError;
+
+      if (!response.ok || !data.success) {
+        throw new Error(!data.success ? data.error : "Failed to send message.");
+      }
+
+      setStatus("sent");
+      setForm({ name: "", email: "", projectType: "", budget: "", message: "" });
+      setErrors({});
+    } catch (error) {
+      setStatus("idle");
+      setSubmitError(error instanceof Error ? error.message : "Failed to send message.");
+    }
   };
 
   const update = (field: keyof FormData, value: string) => {
     setForm((prev) => ({ ...prev, [field]: value }));
     if (errors[field]) setErrors((prev) => ({ ...prev, [field]: undefined }));
+    if (submitError) setSubmitError(null);
   };
 
   if (status === "sent") {
@@ -106,7 +138,11 @@ export function ContactForm() {
             id="projectType"
             value={form.projectType}
             onChange={(e) => update("projectType", e.target.value)}
-            className="w-full rounded-xl border border-white/10 bg-transparent px-4 py-3 text-white transition-colors focus:border-aurora-gold/50 focus:outline-none focus:ring-1 focus:ring-aurora-gold/50"
+            className={cn(
+              "w-full rounded-xl border bg-transparent px-4 py-3 text-white transition-colors focus:border-aurora-gold/50 focus:outline-none focus:ring-1 focus:ring-aurora-gold/50",
+              errors.projectType ? "border-red-500/50" : "border-white/10"
+            )}
+            aria-invalid={!!errors.projectType}
           >
             <option value="" className="bg-aurora-dark">
               —
@@ -157,6 +193,8 @@ export function ContactForm() {
           aria-invalid={!!errors.message}
         />
       </div>
+
+      {submitError ? <p className="text-sm text-red-400">{submitError}</p> : null}
 
       <Button type="submit" size="lg" disabled={status === "sending"} className="w-full sm:w-auto">
         <Send size={16} />
