@@ -7,8 +7,8 @@ export const portfolioProjects: PortfolioProject[] = [
     category: "songs",
     title: { en: "Midwinter Night", zh: "Midwinter Night" },
     credits: {
-      en: "Artist: EON Resonance Lab",
-      zh: "艺人：EON Resonance Lab",
+      en: "Artist: Nala Zhang",
+      zh: "艺人：Nala Zhang",
     },
     coverImage:
       "https://res.cloudinary.com/dkualyhq9/image/upload/q_auto/f_auto/v1781550656/midwinter_night_ikewok.png",
@@ -33,8 +33,8 @@ export const portfolioProjects: PortfolioProject[] = [
     category: "songs",
     title: { en: "Daydream", zh: "Daydream" },
     credits: {
-      en: "Artist: EON Resonance Lab",
-      zh: "艺人：EON Resonance Lab",
+      en: "Artist: Nala Zhang",
+      zh: "艺人：Nala Zhang",
     },
     coverImage:
       "https://res.cloudinary.com/dkualyhq9/image/upload/q_auto/f_auto/v1781470505/%E4%B8%93%E8%BE%91%E5%B0%81%E9%9D%A2_p1wipk.png",
@@ -126,8 +126,8 @@ export const portfolioProjects: PortfolioProject[] = [
       zh: "一部探索世界创造过程的冥想之旅，灵感来源于一个来自普韦布洛印第安部落的老传说。",
     },
     credits: {
-      en: "Composer & Orchestrator: Enshun Zhang · Animated & Directed by Baptiste JAQUEMET, Lucas TEBIB, Yahnis VENTURA, Fiona VILLATE · Duration: 4.5 min",
-      zh: "作曲与编配：Enshun Zhang · 动画与导演：Baptiste JAQUEMET, Lucas TEBIB, Yahnis VENTURA, Fiona VILLATE · 时长：4.5分钟",
+      en: "Composer & Orchestrator: Nala Zhang · Animated & Directed by Baptiste JAQUEMET, Lucas TEBIB, Yahnis VENTURA, Fiona VILLATE · Duration: 4.5 min",
+      zh: "作曲与编配：Nala Zhang · 动画与导演：Baptiste JAQUEMET, Lucas TEBIB, Yahnis VENTURA, Fiona VILLATE · 时长：4.5分钟",
     },
     coverImage:
       "https://res.cloudinary.com/dkualyhq9/image/upload/Trail_of_Light_mrfyda",
@@ -144,14 +144,14 @@ export const portfolioProjects: PortfolioProject[] = [
     id: "exclude-aids-not-seropositives",
     slug: "exclude-aids-not-seropositives",
     category: "film",
-    title: { en: "Exclude AIDS, Not Seropositives", zh: "排除艾滋病，不排斥血清阳性者" },
+    title: { en: "Exclude AIDS, Not Seropositives", zh: "Exclude AIDS, Not Seropositives" },
     description: {
       en: "Original film score for a documentary advocating that people living with HIV should not be excluded or stigmatized.",
       zh: "一部为纪录片创作的原创配乐，主题是倡导不应排斥或污名化HIV感染者。",
     },
     credits: {
-      en: "Composer: Enshun Zhang · Director: Xinchen LI · Duration: 1 min",
-      zh: "作曲：Enshun Zhang · 导演：Xinchen LI · 时长：1分钟",
+      en: "Composer: Nala Zhang · Director: Xinchen LI · Duration: 1 min",
+      zh: "作曲：Nala Zhang · 导演：Xinchen LI · 时长：1分钟",
     },
     coverImage:
       "https://res.cloudinary.com/dkualyhq9/image/upload/q_auto/f_auto/v1781298825/IMG_4690.jpg_ogzune.png",
@@ -174,8 +174,8 @@ export const portfolioProjects: PortfolioProject[] = [
       zh: "一位时尚博主在片场晕倒，陷入一个令人不安的真实梦境。她挣扎着逃离，发现自己越来越接近一个她从未敢面对的真相。",
     },
     credits: {
-      en: "Composer: Enshun Zhang · Director - Chunzhouzi Wang · Writer - Chunzhouzi Wang · Producer - chunzhouzi wang · Key Cast - ting zhou · Duration: 7.5 min",
-      zh: "作曲：Enshun Zhang · 导演： Chuanzhouzi Wang · 编剧：Chuanzhouzi Wang · 制片：chunzhouzi wang · 主演：ting zhou · 时长：7.5分钟",
+      en: "Composer: Nala Zhang · Director - Chunzhouzi Wang · Writer - Chunzhouzi Wang · Producer - chunzhouzi wang · Key Cast - ting zhou · Duration: 7.5 min",
+      zh: "作曲：Nala Zhang · 导演： Chuanzhouzi Wang · 编剧：Chuanzhouzi Wang · 制片：chunzhouzi wang · 主演：ting zhou · 时长：7.5分钟",
     },
     coverImage:
       "https://res.cloudinary.com/dkualyhq9/image/upload/v1781300457/trapped_in_dreams_b5c1zk.png?v=20260612",
@@ -194,8 +194,8 @@ export const portfolioProjects: PortfolioProject[] = [
     category: "film",
     title: { en: "去哪儿", zh: "去哪儿" },
     credits: {
-      en: "Composer: Enshun Zhang · Director: Yifei Li · Duration: 7 min",
-      zh: "作曲：Enshun Zhang · 导演：李亦霏 · 时长：7分钟",
+      en: "Composer: Nala Zhang · Director: Yifei Li · Duration: 7 min",
+      zh: "作曲：Nala Zhang · 导演：李亦霏 · 时长：7分钟",
     },
     coverImage:
       "https://res.cloudinary.com/dkualyhq9/image/upload/q_auto/f_auto/v1781373036/fd8ac2ae0v0d70235324d800fe97cbdc.PNG_jgx3bt.png",
@@ -213,8 +213,8 @@ export const portfolioProjects: PortfolioProject[] = [
     category: "animation",
     title: { en: "HER", zh: "女也" },
     credits: {
-      en: "Composer: Enshun Zhang · Director: Laofangtou",
-      zh: "作曲：Enshun Zhang · 导演：老方头",
+      en: "Composer: Nala Zhang · Director: Laofangtou",
+      zh: "作曲：Nala Zhang · 导演：老方头",
     },
     coverImage:
       "https://res.cloudinary.com/dkualyhq9/image/upload/q_auto/f_auto/v1781374494/IMG_8343.PNG_mq8phl.png",
@@ -232,8 +232,8 @@ export const portfolioProjects: PortfolioProject[] = [
     category: "animation",
     title: { en: "Let's Eat", zh: "Let's Eat" },
     credits: {
-      en: "Composer: Enshun Zhang · Director: Wang Zi · Duration: 4 min",
-      zh: "作曲：Enshun Zhang · 导演：Wang Zi · 时长：4分钟",
+      en: "Composer: Nala Zhang · Director: Wang Zi · Duration: 4 min",
+      zh: "作曲：Nala Zhang · 导演：Wang Zi · 时长：4分钟",
     },
     coverImage:
       "https://res.cloudinary.com/dkualyhq9/image/upload/q_auto/f_auto/v1781375195/Screenshot_202026-02-28_20at_208.15.12_E2_80_AFAM_xemy6q.png",
@@ -251,8 +251,8 @@ export const portfolioProjects: PortfolioProject[] = [
     category: "animation",
     title: { en: "Bagelism", zh: "贝果主义" },
     credits: {
-      en: "Composer: Enshun Zhang · Duration: 2.5 min",
-      zh: "作曲：Enshun Zhang · 时长：2.5分钟",
+      en: "Composer: Nala Zhang · Duration: 2.5 min",
+      zh: "作曲：Nala Zhang · 时长：2.5分钟",
     },
     coverImage:
       "https://res.cloudinary.com/dkualyhq9/image/upload/q_auto/f_auto/v1781376110/Screenshot_202026-02-28_20at_208.18.36_E2_80_AFAM_tnjkqz.png",
@@ -270,8 +270,8 @@ export const portfolioProjects: PortfolioProject[] = [
     category: "animation",
     title: { en: "Special Target", zh: "Special Target" },
     credits: {
-      en: "Composer: Enshun Zhang · Director: Sue Wang · Duration: 2.5 min",
-      zh: "作曲：Enshun Zhang · 导演：Sue Wang · 时长：2.5分钟",
+      en: "Composer: Nala Zhang · Director: Sue Wang · Duration: 2.5 min",
+      zh: "作曲：Nala Zhang · 导演：Sue Wang · 时长：2.5分钟",
     },
     coverImage:
       "https://res.cloudinary.com/dkualyhq9/image/upload/q_auto/f_auto/v1781377349/special-target_vjlvtf.png",
