@@ -9,5 +9,5 @@ export function t(
   locale: Locale,
   fallback = ""
 ): string {
-  return content?.[locale] ?? fallback;
+  return content?.[locale] ?? content?.en ?? fallback;
 }

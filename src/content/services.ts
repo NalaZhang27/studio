@@ -2,48 +2,48 @@ import type { Service } from "@/types";
 
 export const services: Service[] = [
   {
-    id: "film-scoring",
+    id: "film-animation-scoring",
     icon: "film",
-    title: { en: "Film Scoring", zh: "电影配乐" },
+    title: { en: "Film & Animation Scoring", zh: "电影与动画配乐" },
     description: {
-      en: "Original orchestral and hybrid scores tailored to your film's emotional arc. From intimate dramas to epic adventures, we compose music that elevates every frame.",
-      zh: "为您的电影情感弧线量身定制的原创管弦乐与混合配乐。从 intimate 剧情到史诗冒险，我们创作提升每一帧画面的音乐。",
+      en: "Original music for films, animation, shorts, and visual storytelling. Cinematic orchestration and emotional storytelling through music.",
+      zh: "为电影、动画、短片与视觉叙事创作原创音乐。通过电影感的管弦编配与富有情感的音乐讲述故事。",
     },
     deliverables: {
       en: [
         "Original score composition",
-        "Orchestration & arrangement",
-        "Mock-ups & final recordings",
+        "Cinematic orchestration",
+        "Theme & leitmotif development",
         "Stems & delivery formats",
       ],
       zh: [
         "原创配乐创作",
-        "管弦乐编配与编曲",
-        "样带与最终录音",
+        "电影感管弦编配",
+        "主题与主导动机开发",
         "分轨与交付格式",
       ],
     },
   },
   {
-    id: "animation-scoring",
+    id: "image-song-character-themes",
     icon: "sparkles",
-    title: { en: "Animation Scoring", zh: "动画配乐" },
+    title: { en: "Image Song & Character Themes", zh: "印象曲 / 角色主题曲制作" },
     description: {
-      en: "Whimsical, dynamic scores for animated features and series. Character themes, leitmotifs, and adaptive music systems that bring animated worlds to life.",
-      zh: "为动画长片与系列打造的 whimsical、动态配乐。角色主题、主导动机与自适应音乐系统，让动画世界栩栩如生。",
+      en: "Original songs for characters, stories, original IPs, novels, and creative projects. Theme songs for OCs, character relationships, and worldbuilding, blending cinematic storytelling with contemporary styles.",
+      zh: "为角色、故事、原创IP、小说与创意项目创作原创歌曲。为OC、角色关系与世界观打造主题曲，将电影叙事与当代风格融合。",
     },
     deliverables: {
       en: [
-        "Theme & leitmotif development",
-        "Episode scoring",
-        "Adaptive music design",
-        "Sound palette creation",
+        "Theme song composition",
+        "Character motif development",
+        "Lyrics & vocal demo support",
+        "Contemporary production",
       ],
       zh: [
-        "主题与主导动机开发",
-        "分集配乐",
-        "自适应音乐设计",
-        "声音调色板创建",
+        "主题曲创作",
+        "角色动机开发",
+        "歌词与人声样带支持",
+        "当代风格制作",
       ],
     },
   },

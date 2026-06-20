@@ -29,7 +29,7 @@ export function FeaturedProjects() {
           {projects.map((project) => (
             <StaggerItem key={project.id}>
               <Link
-                href={`/portfolio#${project.slug}`}
+                href={`/portfolio/${project.slug}`}
                 className="group relative block overflow-hidden rounded-2xl bg-aurora-card"
               >
                 <div className="relative aspect-[4/3] overflow-hidden">

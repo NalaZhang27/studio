@@ -7,8 +7,8 @@ import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/FadeIn";
 import { teamMembers } from "@/content/team";
 
 const tags = {
-  en: ["Film", "Animation", "Theatre", "Games", "Pop"],
-  zh: ["电影", "动画", "戏剧", "游戏", "流行"],
+  en: [],
+  zh: [],
 };
 
 export function HomeIntro() {

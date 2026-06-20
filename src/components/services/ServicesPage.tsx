@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { services } from "@/content/services";
 import { useTranslation } from "@/context/LanguageContext";
+import { Fragment } from "react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/FadeIn";
@@ -85,30 +86,32 @@ export function ServicesPage() {
 
       <section className="border-y border-white/5 bg-aurora-darker py-24 lg:py-32">
         <Container>
-          <FadeIn>
-            <SectionHeading
-              label={t.services.process.label}
-              title={t.services.process.title}
-              align="center"
-            />
-          </FadeIn>
-          <StaggerContainer className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {t.services.process.steps.map((step, i) => (
-              <StaggerItem key={step.title}>
-                <div className="text-center">
-                  <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-aurora-gold/30 font-display text-xl text-aurora-gold">
-                    {String(i + 1).padStart(2, "0")}
+          <Fragment key={locale}>
+            <FadeIn>
+              <SectionHeading
+                label={t.services.process.label}
+                title={t.services.process.title}
+                align="center"
+              />
+            </FadeIn>
+            <StaggerContainer className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+              {t.services.process.steps.map((step, i) => (
+                <StaggerItem key={`${locale}-${i}`}>
+                  <div className="text-center">
+                    <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-aurora-gold/30 font-display text-xl text-aurora-gold">
+                      {String(i + 1).padStart(2, "0")}
+                    </div>
+                    <h3 className="mt-4 font-display text-lg font-light text-white">
+                      {step.title}
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-aurora-muted">
+                      {step.body}
+                    </p>
                   </div>
-                  <h3 className="mt-4 font-display text-lg font-light text-white">
-                    {step.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-aurora-muted">
-                    {step.body}
-                  </p>
-                </div>
-              </StaggerItem>
-            ))}
-          </StaggerContainer>
+                </StaggerItem>
+              ))}
+            </StaggerContainer>
+          </Fragment>
         </Container>
       </section>
 
