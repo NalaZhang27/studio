@@ -288,7 +288,6 @@ export const portfolioProjects: PortfolioProject[] = [
 export const portfolioCategories = [
   "film",
   "animation",
-  "games",
   "songs",
   "arrangements",
 ] as const;

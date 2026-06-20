@@ -242,11 +242,6 @@ export function PortfolioPage() {
                           <span className="rounded-full border border-white/10 bg-black/30 px-3 py-1 text-xs uppercase tracking-wider text-white/90 backdrop-blur-sm">
                             {t.portfolio.categories[project.category]}
                           </span>
-                          {project.media ? (
-                            <span className="rounded-full border border-aurora-gold/20 bg-aurora-gold/10 px-3 py-1 text-xs uppercase tracking-wider text-aurora-gold backdrop-blur-sm">
-                              {getPlatformLabel(project.media.platform)}
-                            </span>
-                          ) : null}
                         </div>
                         <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between gap-4">
                           <div>
